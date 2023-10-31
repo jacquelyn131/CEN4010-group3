@@ -5,4 +5,5 @@ Development stack:
 - backend: Node.js version 20.9.0 
 - frontend: React.js [version TBD]
 - database: TBD
+
 Note: we all have to have the same version of each app for GitHub to work correctly.
