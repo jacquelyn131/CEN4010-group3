@@ -2,7 +2,8 @@
 messenger web app: myMessenger
 
 Development stack: 
-- backend: Node.js version 20.9.0 
+- backend: Node.js version 20.9.0
+  - Next.js [version TBD]
 - frontend: React.js [version TBD]
 - database: TBD
 
