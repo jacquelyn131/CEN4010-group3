@@ -6,4 +6,4 @@ const myContacts = new ContactList();
 myContacts.addContact("Jason");
 instance.contacts = myContacts;
 console.log("Added contacts to user");
-console.log(`${instance.contacts.contacts}`);
+console.log(`${instance.contacts.contacts}`); // hello
