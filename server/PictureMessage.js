@@ -6,6 +6,11 @@ class PictureMessage {
     toAddress;
     fromAddress;
     // constructor
+    Constructor(image, to, from) {
+        this.imageFile = image;
+        this.toAddress = to;
+        this.fromAddress = from;
+    }
     // getters
     // setters
     // methods
