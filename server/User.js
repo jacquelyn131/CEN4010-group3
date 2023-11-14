@@ -8,6 +8,7 @@ class User {
     bio;
     profileImageURL;
     contacts;
+    chats;
 
     constructor(name, pass, email) {
         this.name = name;
@@ -34,9 +35,12 @@ class User {
     get profileImageURL() {
         return this.profileImageURL;
     }
-    getContacts() {
+    get contacts() {
         return this.contacts;
     } 
+    get chats() {
+        return this.chats;
+    }
     // setters
     set name(n) {
         this.name = n;
@@ -58,6 +62,9 @@ class User {
     }
     set contacts(c) {
         this.contacts = c;
+    }
+    set chats(ch) {
+        this.chats = ch;
     }
     // methods
     addContact(contact) { // add a new contact to this user's contact list
