@@ -16,3 +16,5 @@ console.log(temp.peek()); // hello
 // send a message
 const msg1 = new Message("hello from stephanie", "stephanie@email.com" ,"jason@email.com");
 console.log(msg1);
+instance.addChat("jason@email.com");
+// add the message to the jason@email.com chat in the Stephanie instance

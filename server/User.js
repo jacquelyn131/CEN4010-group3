@@ -1,4 +1,5 @@
 const List = require("collections/_list");
+const Chat = require("./Chat");
 
 // A user class with getters, setters, and relevant methods.
 class User {
@@ -76,9 +77,9 @@ class User {
     removeContact(contact) { // remove a contact from this user's contact list.
         this.contacts.remove(contact);
     }
-
-    sayHello() {
-        return `Hello, ${this.name}`;
+    addChat(username) {
+        newChat = new Chat(username);
+        this.chats.push(newChat);
     }
 
 }
