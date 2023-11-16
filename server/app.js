@@ -1,9 +1,18 @@
 const User = require('./User');
 const ContactList = require(`./ContactList`);
+const Contact = require('./Contact');
+const Message = require('./Message');
 const instance = new User("Stephanie", "password", "stephanie@email.com");
+const instance2 = new User("Jason", "password", "jason@email.com");
 console.log(instance.name);
+console.log(instance2.name);
 const myContacts = new ContactList();
-myContacts.addContact("Jason");
+const contactJ = new Contact("Jason");
+myContacts.addContact(contactJ);
 instance.contacts = myContacts;
 console.log("Added contacts to user");
-console.log(`${instance.contacts.contacts}`); // hello
+const temp = instance.contacts.contacts;
+console.log(temp.peek()); // hello
+// send a message
+const msg1 = new Message("hello from stephanie", "stephanie@email.com" ,"jason@email.com");
+console.log(msg1);

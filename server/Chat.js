@@ -6,7 +6,7 @@ class Chat {
     username;
     messages;
     // constructor
-    Constructor(user) {
+    constructor(user) {
         this.username = user;
         this.messages = new List();
     }

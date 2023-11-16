@@ -4,7 +4,7 @@ class Contact {
     nickname;
     notes;
     // constructor
-    Constructor(username) {
+    constructor(username) {
         this.username = username;
         this.nickname = username;
     }

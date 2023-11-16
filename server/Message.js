@@ -5,7 +5,7 @@ class Message {
     toAddress;
     fromAddress;
     // constructor
-    Constructor(body, to, from) {
+    constructor(body, to, from) {
         this.messageBody = body;
         this.toAddress = to;
         this.fromAddress = from;

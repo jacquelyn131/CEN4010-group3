@@ -1,3 +1,5 @@
+const List = require("collections/_list");
+
 // A user class with getters, setters, and relevant methods.
 class User {
     // fields
@@ -14,6 +16,7 @@ class User {
         this.name = name;
         this.password = pass;
         this.email = email;
+        this.chats = new List();
         console.log(`new user created with name ${name}`);
     }
     // getters
